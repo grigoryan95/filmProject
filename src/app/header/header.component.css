@@ -1,0 +1,9 @@
+button,span {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.nav{
+  position: fixed;
+  width: 100%;
+}
+

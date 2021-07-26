@@ -1,0 +1,17 @@
+
+<div class="a">
+  <div class="divBox" *ngFor="let item of card |filter:search">
+    <p-card [header]="item.title | titlecase " [subheader]="item.name | lowercase"  styleClass="p-card-shadow">
+      <ng-template pTemplate="header">
+        <img alt="Card"
+             [src]="item.src"
+        >
+      </ng-template>
+      <small> <i class="pi pi-phone"></i>  <strong>{{item.number | titlecase}}</strong> </small>
+
+    </p-card>
+  </div>
+
+</div>
+
+

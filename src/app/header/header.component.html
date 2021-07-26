@@ -1,0 +1,12 @@
+<div class="nav">
+  <nav>
+    <button pButton type="button" label="Home" [routerLink]="['/']" (click)="clearInput()"></button>
+    <button pButton type="button" label="Cinema" [routerLink]="['/cinema']" (click)="clearInput()"></button>
+    <button pButton type="button" label="Films" [routerLink]="['/films']" (click)="clearInput()"></button>
+    <button pButton type="button" label="Posts" [routerLink]="['/posts']" ></button>
+    <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input type="text" pInputText placeholder="Search" [(ngModel)]="search" (input)="searchInput$()">
+    </span>
+  </nav>
+</div>

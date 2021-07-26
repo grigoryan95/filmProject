@@ -1,0 +1,15 @@
+
+<div class="a">
+  <div class="divBox" *ngFor="let post of posts |fillter:search">
+    <p-card [header]="post.title | titlecase" [subheader]="post.name | lowercase"  styleClass="p-card-shadow">
+      <ng-template pTemplate="header">
+        <img alt="Card"
+             [src]="post.src"
+        >
+      </ng-template>
+      <small>producer  <strong>{{post.productsBy | titlecase}}</strong> </small>
+
+    </p-card>
+  </div>
+
+</div>

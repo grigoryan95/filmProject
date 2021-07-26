@@ -1,0 +1,23 @@
+.divBox {
+  width: 270px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px black;
+  overflow: hidden;
+  margin-top:50px;
+  transition: .2s all ease-out;
+}
+.divBox:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: .2s all ease-in;
+}
+.a {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 40px;
+  margin-left: 100px;
+  min-height: 99vh;
+}
+span {
+  top:45px
+}

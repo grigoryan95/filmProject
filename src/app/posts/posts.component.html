@@ -1,0 +1,13 @@
+<div class="a">
+  <div class="divBox" *ngFor="let item of card">
+    <p-card [header]="item.body | titlecase " [subheader]="item.title | lowercase" styleClass="p-card-shadow">
+
+
+      <p-button label="Delete" icon="pi pi-times" styleClass="p-button-secondary"
+                [style]="{'margin-left': '.5em',background:'red'}" (click)="delete(item.id)"></p-button>
+
+    </p-card>
+
+  </div>
+
+</div>
